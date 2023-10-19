@@ -1,0 +1,97 @@
+20 interview questions for Conditional Statements
+
+1. What is pass in Python?
+    Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
+
+2. What Does The Continue Do In Python? 
+    The continue is a jump statement in Python which moves the control to execute the next iteration in a loop leaving all the remaining instructions in the block unexecuted.
+
+3. When Should You Use The “Break” In Python? 
+    Python provides a break statement to exit from a loop. Whenever the break hits in the code, the control of the program immediately exits from the body of the loop.
+    The break statement in a nested loop causes the control to exit from the inner iterative block.
+
+4. What Is The Difference Between Pass And Continue In Python? 
+    The continue statement makes the loop to resume from the next iteration.
+    On the contrary, the pass statement instructs to do nothing, and the remainder of the code executes as usual.
+
+5. Can you explain the importance of conditional statements in a programming language?
+    Conditional statements are fundamental in programming languages as they allow for decision making based on specific conditions. 
+    They control the flow of execution by deciding which code blocks to execute or skip, thus enabling dynamic responses to different inputs or situations.
+
+6. How would you handle missed cases in conditional statements?
+    Missed cases in conditional statements can be handled by using the “else” clause. 
+    The else clause ensures that there’s always some code executed, even if none of the specified conditions are met.
+
+7. How would you refactor nested if-else conditions for better readability and maintainability?
+    Refactoring nested if-else conditions can be achieved through several methods. 
+    One approach is to use guard clauses, which return early from a function when certain conditions are met. This reduces the level of indentation and makes the code easier to read.
+    Another method is to replace conditional with polymorphism. This involves creating subclasses for each condition and overriding a method in each subclass. The correct subclass is then instantiated based on the initial condition.
+    A third technique is to use lookup tables or dictionaries instead of multiple if-else statements. This simplifies the code by mapping inputs directly to outputs or actions.
+    Lastly, consider using ternary operators for simple if-else conditions as they make the code more concise. However, avoid overusing them as it may reduce readability.
+
+8. How can the use of switch statements simplify complex if-else chains?
+    Switch statements can simplify complex if-else chains by providing a more readable and organized structure. 
+    Instead of having multiple if-else conditions, switch statements allow you to evaluate an expression once and then compare the result against various cases. 
+    Each case represents a possible value for the expression. If there’s a match, the corresponding block of code is executed. 
+    This eliminates the need for repeated checks in if-else chains, reducing redundancy and improving performance.
+
+9. Can you describe a situation where the use of a ternary operator would be more appropriate than a traditional if-else statement?
+    A ternary operator is more appropriate when dealing with simple, single condition checks that return a value. 
+    For instance, in JavaScript, you might want to assign a variable based on a boolean condition. 
+    Instead of using an if-else statement like:
+    if (isMember): fee = 25 else: fee = 50
+    You could use a ternary operator for brevity and readability:
+    fee = isMember ? 25 : 50
+    This reduces lines of code and improves clarity by directly associating the condition with the values being assigned.
+
+10. How do you incorporate error handling within your conditional statements?
+    Incorporating error handling within conditional statements involves the use of try-catch blocks. 
+    In a typical scenario, you place the code that may throw an exception in the ‘try’ block. 
+    If an exception occurs, it’s caught and handled in the ‘catch’ block.
+
+11. Can you explain the difference between “if” and “else if” statements?
+    An “if” statement checks a condition and executes the code block if it’s true. It initiates the conditional check. 
+    An “else if” statement, on the other hand, is used after an initial “if” statement and serves to check additional conditions if the previous ones were false. 
+    Essentially, “if” starts the conditional chain, while 
+    “else if” continues it by providing alternative paths for the program flow based on different conditions.
+
+12. Can you describe a scenario in which you would use a “switch” statement instead of multiple “if” statements?
+    A “switch” statement is ideal when dealing with multiple conditions based on a single variable’s value. 
+    For instance, in a weather application where the user selects their preferred forecast from options 
+    like sunny, rainy, snowy, or cloudy. 
+    Instead of using multiple “if” statements to check each condition, we can use a “switch” statement for 
+    cleaner and more readable code.
+
+13.  How can you avoid the use of multiple if-else statements using logical operators?
+    Logical operators can be used to avoid multiple if-else statements by combining conditions. The three main logical operators are AND, OR and NOT.
+
+14. Can you give an example of how you would use a Boolean in a conditional statement?
+    A Boolean in a conditional statement can be used to control program flow. 
+    For instance, consider an online shopping platform where users must be logged in to make purchases.
+
+15. Can you explain how you would use conditional statements in a loop?
+    Conditional statements within a loop are used to control the flow of execution based on certain conditions. 
+    For instance, in a ‘for’ or ‘while’ loop, we can use an ‘if’ statement to execute code only when a specific condition is met.
+
+16. How would you use conditional statements to validate user input?
+    Conditional statements can be used to validate user input by checking if the entered data meets certain criteria. 
+    For instance, in a registration form, we might use an ‘if’ statement to check whether the password length is at least 8 characters. 
+    If it’s not, we could return an error message prompting the user to enter a longer password.
+
+17. Can you explain how to use conditional statements to handle potential null values?
+    Conditional statements can be used to handle potential null values in programming. 
+    A common method is using an “if” statement to check if a variable is null before proceeding with operations that could cause errors when applied to null values.
+
+18. How do you use conditional statements to control program flow in recursive functions?
+    Recursive functions use conditional statements to control program flow by determining when the function should stop calling itself. 
+    This is typically achieved through a base case, which is a condition that returns a value without making any subsequent recursive calls.
+
+19. How would you write a conditional statement that handles multiple types of exceptions?
+    In Python, you can handle multiple exceptions in a single except block by providing the exceptions as a tuple.
+    This try-except block will catch both TypeError and ValueError exceptions. If any other type of exception is raised, it won’t be caught by this block.
+
+20. How can you refactor a complex conditional statement to improve its performance?
+    Refactoring complex conditional statements can improve performance by reducing computational load and enhancing readability. 
+    One method is to use a lookup table or dictionary, replacing multiple conditions with key-value pairs for faster access. 
+    Another approach involves using short-circuit evaluation where the interpreter stops evaluating as soon as it finds a condition that satisfies the statement, saving processing time. 
+
