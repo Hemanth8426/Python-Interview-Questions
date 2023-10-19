@@ -1,0 +1,95 @@
+20 interview questions for Data Types
+
+1. What are data types in programming?
+	Data types are the classification of data that tells the compiler or interpreter how the programmer intends to use that data. 
+
+2. What is the difference between a primitive and non-primitive data type?
+	A primitive data type is one that is built into the language and is not derived from any other type. 
+Examples of primitive data types would be byte , short , int , long , float , double , boolean and char in Python. 
+	A non-primitive data type is one that is not built into the language and is instead derived from a primitive data type. 
+Example of a non-primitive data type would be Strings, Arrays, Classes, Interface, etc... in Python
+
+3. Can you give me some examples of primitive data types?
+	In programming, there are two main types of data: primitive and non-primitive. 
+	Primitive data types are the most basic data types available, and include types like integers, floats, and Booleans. 
+	Non-primitive data types are more complex, and include types like strings, arrays, and objects.
+
+4. Can you list some common non-primitive data structures used in Python?
+	Some common non-primitive data structures used in Python include lists, tuples, and dictionaries.
+
+5. Is it possible to store multiple values in a single variable? If yes, then how?
+	Yes, it is possible to store multiple values in a single variable in a few different ways. 
+	One way is to store the values as a list or array. 
+	Another way is to store the values as a string, with each value separated by a delimiter.
+
+6. When would you use an integer over a float or vice versa?
+	An integer is a data type that represents a whole number, while a float is a data type that represents a number with a decimal point. 
+	You would use an integer over a float when you need to represent a number that cannot have a decimal point, such as when counting objects. 
+	You would use a float over an integer when you need to represent a number that can have a decimal point, such as when measuring distance.
+
+7. What is the purpose of the “is” operator in python? How do you determine whether two variables point to the same object or not?
+	The “is” operator in python is used to determine whether two variables point to the same object or not. 
+	If two variables point to the same object, then they will be equal.
+
+8. What is the main difference between immutable and mutable objects?
+	Immutable objects are those that cannot be changed after they are created. 
+	Mutable objects, on the other hand, can be changed after they are created. 
+	This is the main difference between the two types of objects.
+
+9. Are strings considered as mutable or immutable objects in Python?
+	In Python, strings are considered immutable objects. This means that once a string is created, it cannot be changed. 
+	Any attempt to change a string will result in a new string being created.
+
+10. What is the default value of object in Python?
+	The default values concept in Python are based on using mutable or immutable objects. 
+	It is good programming practice to not use mutable objects as default values. 
+	Instead, use None as the default value to avoid issues. 
+
+11. What is object reference variable in Python?
+	A reference variable is a variable that points to an object of a given class, letting you access the value of an object. An object is a compound data structure that holds values that you can manipulate. A reference variable does not store its own values.
+
+12. How does memory allocation work for Objects in Python?
+	The programmer has to manually allocate memory before it can be used by the program and release it when the program no longer needs it. 
+	In Python, memory management is automatic! Python automatically handles the allocation and deallocation of memory.
+
+13. Do all data types take up the same amount of space in memory? If not, which ones are more efficient than others?
+	No, all data types do not take up the same amount of space in memory. 
+	Some data types, like integers, take up more space than others, like characters. 
+	This is because integers are typically stored as 4-byte values, while characters are typically stored as 1-byte values. 
+	As a result, integers are more efficient than characters when it comes to memory usage.
+
+14. What is the significance of Big O notation?
+	Big O notation is a way of measuring the efficiency of an algorithm. 
+	It tells you how many operations the algorithm will need to perform in order to complete its task, and how those operations will scale as the size of the input data increases. 
+	This is important because it allows you to compare the efficiency of different algorithms and choose the one that will be best for your needs.
+
+15. What’s the difference between a string literal and a string constant?
+	A string literal is a sequence of characters that is used to represent a string value within the code. 
+	A string constant is a string value that is assigned to a variable, and it cannot be changed.
+
+16. What happens if you try to assign a value that doesn’t match with a declared data type?
+	Depending on the programming language, you may get an error, or the value may be automatically converted to the closest matching data type.
+
+17. What is TypeScript and why is it so popular?
+	TypeScript is a superset of JavaScript that adds optional static typing to the language. This can be helpful in large projects where code needs to be maintainable and error-free. 
+	TypeScript is popular because it allows developers to use the latest JavaScript features while still providing backwards compatibility with older browsers.
+
+18. What is the best way to convert a String to Integer in Java?
+	The best way to convert a String to an Integer in Java is to use the Integer.parseInt() method. This method takes in a String and returns an int.
+
+19. What is the best way to convert a String to Integer in Python?
+	The best way to convert a String to an Integer in Python, you use the int() built-in function. This function takes in as a parameter the initial string you want to convert, and returns the integer equivalent of the value you passed.
+
+20. What are Packages and Modules in Python?
+	Packages and Modules are both ways of organizing Python code. 
+	Packages are a way of structuring Python’s module namespace by using “dotted module names”. 
+	Modules are Python code libraries that you can include in your project.
+
+21. Why is casting important when dealing with different data types?
+	Casting is the process of converting a value from one data type to another. This is important because different data types can have different ranges, meaning that a value that is valid for one data type might not be valid for another. 
+	By casting/converting values to the appropriate data type, you can ensure that your data is valid and avoid any errors.
+
+
+
+
+
