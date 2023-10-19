@@ -1,0 +1,223 @@
+20 interview questions for Functions
+
+1. What is a Python function, and why is it useful in programming?
+    A Python function is a block of reusable code that performs a specific task or set of tasks. 
+    It is defined using the "def" keyword followed by the function name, a set of parentheses containing optional parameters, and a colon. 
+    The function body, which contains the code to be executed when the function is called, is indented under the function definition.
+    In programming, functions serve the following purposes:
+    * Modularity: Functions allow programmers to break down complex tasks into smaller, manageable pieces. 
+    The overall program becomes easier to understand, test, and maintain when code is divided into functions.
+    * Reusability: Once defined, a function can be used multiple times within a program or even in other programs.
+    * Abstraction: Functions abstract away their implementation details, allowing other parts of the program to interact with them using only their names and parameters.
+    * Encapsulation: Functions can encapsulate specific functionality, hiding implementation details from the outside world. 
+    As a result, data privacy is maintained and information is hidden.
+    * Code Organization: Functions enable better code organization by grouping related tasks together. 
+    It makes the program easier to navigate and understand because they provide a clear structure.
+    * Parameter Passing: Functions can take input parameters, allowing them to process different data or handle different situations.
+    * Return Values: Functions can communicate results or data back to their calling code via return values.
+
+2. How do you define a function in Python? Give an example.
+    In Python, you can define a function using the "def" keyword followed by the function name, parentheses containing optional parameters, and a colon. 
+    Function bodies, which contain the code to be executed when the function is called, are indented under their definitions.
+      # Function definition
+    def message(name):
+        return f"Hello, {name}!"
+    # Call the function
+    def message(name):
+        return f"Hello, {name}!"
+
+3. How do you call a function in Python? Give an example.
+    Python calls a function by using its name followed by parentheses containing any required arguments or parameters. 
+    A function can be called by writing its name, followed by parentheses with any variables or values it requires.
+    example:
+    # Function definition
+    def message(name):
+        return f"Hello, {name}!"
+    # Call the function
+    def message(name):
+        return f"Hello, {name}!"
+    
+    # Function call
+    result = message("Norah")
+    # Printing the result
+    print(result)  # Output: Hello, Norah!
+    result = message("Norah")
+    # Printing the result
+    print(result)  # Output: Hello, Norah!
+
+4. What are the default arguments in a function? What is the best way to use them?
+    Default arguments in a function are parameters with a predefined value set by the function definition. 
+    When calling a function, if no argument is provided for a parameter with a default value, the default value will be used. 
+    In this way, the function is more flexible and does not require each argument to be specified.
+
+5. What are function arguments, and how are they used in Python?
+    Function arguments in Python are values or variables passed to a function when it is called. 
+    They allow you to provide input data to the function, which can then be used within the function's code to perform specific tasks and calculations.
+    Python function arguments can be different:
+        * Positional Arguments: These are the most common arguments. 
+            As defined in the function's parameter list, they are passed to the function in the same order.
+        * Keyword Arguments: When calling a function, you specify the parameter name and its value. 
+            This allows you to provide arguments in any order and makes the function call more explicit and readable.
+        * Default Arguments: In the function definition, default arguments have predefined values. 
+            If an argument is not provided when calling the function, the default value will be used.
+
+6. Explain the difference between positional and keyword arguments in a function?
+    In a function, positional arguments and keyword arguments differ in how they are passed and matched to parameters.
+    Positional arguments:
+        * Positional arguments are the most common arguments used in functions.
+        * When you call a function with positional arguments, the values are passed to the function in the same order as the parameters are defined in the function's parameter list.
+        * The position of each argument determines which parameter it corresponds to.
+        * If the function has multiple parameters, you need to provide arguments for all parameters in order.
+        * The positional arguments are identified based on their position, and their values are matched from left to right with the parameters of the function.
+    Keyword arguments:
+        * Keyword arguments allow you to specify the parameter name and its corresponding value when calling the function.
+        * Rather than relying on the position of the arguments, you explicitly name each parameter followed by its value.
+        * Providing arguments in any order makes the function call more explicit and readable.
+        * Keyword arguments are helpful when you have functions with multiple parameters, and you want to know which value is assigned to each parameter.
+
+7. What is the purpose of the *args and **kwargs syntax in function definitions?
+    The '*args` and '**kwargs' syntax in function definitions allows Python functions to accept a variable number of arguments. 
+    These special syntaxes provide flexibility when you don't know how many arguments will be passed to the function. 
+    They also provide flexibility when you want to accept both positional and keyword arguments in a single function.
+    args (Arbitrary Positional Arguments):
+        * The *args syntax allows a function to accept an arbitrary number of positional arguments.
+        * In the function definition, *args is used as a parameter. A tuple is created by collecting any additional positional arguments provided during the function call.
+        * It is a convention to use args, but you can use any other name with the * prefix.
+    kwargs (Arbitrary Keyword Arguments):
+        * The **kwargs syntax allows a function to accept an arbitrary number of keyword arguments.
+        * In the function definition, **kwargs is used as a parameter. It collects any additional keyword arguments provided during the function call. The arguments are stored in a dictionary with their names as keys and their values as values.
+        * kwargs is a convention, but you can use any other name with the ** prefix.
+
+8. How do you return values from a function in Python?
+    Python uses the return statement to send values back from a function to the caller. In various ways, a function can return a single value or multiple values.
+    * Returning a single value:
+        To return a single value from a function, we can simply use the return statement followed by the value you want to return.
+    * Returning multiple values using tuple:
+        We can return multiple values from a function as a tuple. The values should be separated by commas after the return statement.
+    * Returning Multiple Values using a list:
+        Multiple values can also be returned as a list. Simply put the values in square brackets after the return statement.
+    * Returning multiple values using a dictionary:
+        You can return multiple values as a dictionary by using the return statement along with a dictionary.
+
+9. What is scope in Python functions? Explain with an example.
+    In Python, scope refers to the visibility and accessibility of variables within different parts of a program. 
+    Scope determines where a variable is accessible and where not. 
+    In order to understand how variables behave within functions and how they interact with each other, 
+    it is crucial to understand scope.
+    Python has two main types of scope:
+    * Local scope:
+        * Variables declared within a function have local scope. They are accessible only within the function in which they are defined.
+        * Local variables are created when the function is called and destroyed when it exits.
+        * Local variables cannot be accessed from outside the function.
+    * Global Scope:
+        Variables declared outside of any function or at the top level of a script have global scope. They are accessible throughout the program.
+        During program startup, global variables are created in memory and remain there until the program ends.
+        Global variables can be accessed from any function within the program.
+    * Nested scope:
+        Python allows nested functions, where one function is defined inside another.
+        During nested functions, the inner function has access to variables in the outer (enclosed) function.
+        The inner function's scope is called "nested scope" because it includes both its local scope and the enclosing function's scope.
+
+10. Describe the difference between global and local variables in Python
+    Python variables are classified into two main types based on their scope: global variables and local variables.
+    * Global variables:
+        * Global variables are declared outside of any function or at the top level of a script.
+        * Their global scope makes them accessible throughout the program.
+        * A program's global variables are created when it starts and remain in memory until the program ends.
+        * Any function within the program can access and modify global variables.
+    * Local variables:
+        A local variable is one that is declared within a function and has a local scope.
+            * They are accessible only within the function in which they are defined.
+            * Local variables are created when the function is called and destroyed when it exits.
+            * Local variables cannot be accessed from outside the function.
+    * Using global variables inside a function:
+        It is necessary to use the global keyword before the variable name if you want to use a global variable inside a function. This allows you to modify the global variable within the function.
+
+11. How do you access global variables inside a function? Is it possible to modify them?
+    Inside a Python function, use the global keyword before the variable name to access global variables. 
+    This tells Python to refer to a global variable instead of a local variable. 
+    It allows you to access its value within the function. 
+    The global keyword also allows you to modify the value of a global variable within a function.
+
+12. If a variable has the same name locally and globally, what happens
+    If a variable has the same name both locally (inside a function) and globally (outside the function), Python will prioritize the local variable over the global one when accessed inside the function.
+    When a variable is referenced inside a function, Python searches for a local variable with that name first.
+    If it finds a local variable, it will use its value, even if there is a global variable with the same name.
+
+13. What are modules in Python, and how do they organize code?
+    A Python module is a file containing Python code that defines variables, functions, and classes. 
+    In modules, code is organized into logical units, making it easier to reuse code across different parts of a program or across multiple programs.
+    Python modules serve several purposes:
+        * Code Organization: Modules make it easier to break down a large program into smaller, more manageable parts. 
+            You can import and use each module to handle specific functions.
+        * Code Reusability: Modules can be imported and used in other Python programs once they have been defined. 
+            This helps in writing DRY (Don't Repeat Yourself) code.
+        * Encapsulation: Modules provide a level of encapsulation, where internal details of a module can be hidden from 
+            other parts of the program, which promotes clean, maintainable code.
+        * Namespace: Each module defines its own namespace, preventing naming conflicts with other modules.
+        * To create a module, you define your Python code in a .py file. For example, if you create a file named 
+            test_module.py containing some functions, classes, or variables, you can import and use those in other 
+            parts of your program using the import statement.
+
+14. How do you import a module into Python? Provide different ways to import modules.
+    Python imports modules using the "import" statement. 
+    A module can be imported in a variety of ways depending on how you want to access its functions, classes, or variables. 
+    Here are the different ways to import modules:
+    * Basic import:
+        The above command imports the entire module and allows you to access its contents using the module name as a prefix. For example, if the module contains a function named "is_even()", you can access it as module_name.is_even().
+    * Import with alias:
+        This imports the entire module but assigns it an alias. This allows you to access the module's contents using the alias instead of the full module name. For example, if you use "import date as dt", you can access the date.today() function as dt.today().
+    * Import all items:
+        This imports all items from the module directly into your current namespace. Using this approach can cause naming conflicts and make it difficult to track imported items' origins.
+    * Conditional import:
+        This allows you to conditionally import a module based on a certain condition. The "import" will occur only if the condition is true.
+    * Import submodules:
+        If a module is part of a package (i.e., it is in a subdirectory with an init.py file), we can import it using the full path from the package. For example, if we have a package named "testpackage" and a module named "testmodule" inside it, we can import it as "import testpackage.testmodule".
+
+15. Explain the concept of namespacing in relation to module imports?
+    In Python, 'namespacing' refers to the idea of organizing objects (such as functions, classes, variables, etc.) 
+    in separate namespaces to avoid naming conflicts and to provide a way to uniquely identify and access those objects. 
+    This concept is closely related to module imports.
+    By using the "import" statement, you create a new namespace containing all the objects defined in the imported module. 
+    This new namespace is associated with the module name. 
+    For example, when you import the math module, you can access functions like "math.sqrt()" and "math.sin()" by using the math namespace.
+    Here's how 'namespacing' works with module imports:
+    * Accessing objects in a module:
+        When you import a module, the objects (functions, classes, etc.) defined in that module become accessible using the module's name as a prefix. For example, if you import the math module, you can access the sqrt() function using math.sqrt().
+    * Avoiding naming conflicts:
+        Namespacing avoids naming conflicts when different modules define objects with the same name. For example, if one module provides a function called today() and another module also defines a function with the same name, you can import both modules separately and use their functions using their respective namespaces to differentiate between them.
+    * Encapsulation and modularity:
+        Namespacing promotes encapsulation and modularity. Each module has its own namespace, which works as a container for its objects. Larger programs can be managed and maintained more easily when code is organized into logical units.
+    * Explicit access to objects:
+        By using namespacing, you have explicit access to objects from a particular module, and you can clearly see where those objects come from. In this way, code readability is improved as well as the origins of objects are easier to understand.
+
+16. What is self in Python?
+    Self is an instance or an object of a class. In Python, this is explicitly included as the first parameter. 
+    However, this is not the case in Java where it’s optional.  It helps to differentiate between the methods and attributes of a class with local variables.
+    The self variable in the init method refers to the newly created object while in other methods, it refers to the object whose method was called.
+
+17. What are the principal differences between lambda and def?
+    Def can hold multiple expressions while lambda is a uni-expression function.
+    * Def generates a function and designates a name to call it later. Lambda forms a function object and returns it.
+    * Def can have a return statement. Lambda can’t have return statements.
+    * Lambda supports getting used inside a list and dictionary.
+
+18. What is a built-in function that Python uses to iterate over a number sequence?
+    Python range() is the built-in function that we can use to iterate over the elements of a sequence.
+    The range() function accompanies two sets of parameters.
+    range(stop)
+        Stop: It is the number of integers to generate and starts from zero. eg. range(3) == [0, 1, 2].
+    range([start], stop[, step])
+        Start: It is the starting number of the sequence.
+        Stop: It specifies the upper limit of the sequence.
+        Step: It is the incrementing factor for generating the sequence.
+
+19. What is a function in Python programming?
+    A function is an object which represents a block of code and is a reusable entity. 
+    It brings modularity to a program and a higher degree of code reusability.
+    Python has given us many built-in functions such as print() and provides the ability to create user-defined functions.
+
+20. How many basic types of functions are available in Python?
+    Python gives us two basic types of functions.
+    1. Built-in, and 2. User-defined.
+    The built-in functions happen to be part of the Python language. Some of these are print(), dir(), len(), and abs() etc.
